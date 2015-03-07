@@ -1,9 +1,9 @@
 ## Background
 
-This repository contains the 4 R scripts submitted in fulfilment of Assignment 1 of the COURSERA Exploratory Data Analysis Course.
+This repository contains the 4 R scripts submitted in fulfillment of Assignment 1 of the COURSERA Exploratory Data Analysis Course.
 
 The assignment uses data from the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
-Learning Repository</a>, a popular repository for machine learning datasets. The data set used for the assignemnt concerns the "Individual household electric power consumption Data Set" which is available on the course web site:
+Learning Repository</a>, a popular repository for machine learning datasets. The data set used for the assignment concerns the "Individual household electric power consumption Data Set" which is available on the course web site in zip format:
 
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
 
@@ -13,45 +13,41 @@ There are 4 scripts:
 
 *  plot1.R
 
-This script produces an histogram of the Global Active Power comsumption in kilowatts.
+This script produces an histogram of the Global Active Power comsumption in kilowatts. 
+The script outputs the plot to a PNG file in the sub-directory 'figure' in the current-working directory as: plot1.png
 
 *  plot2.R
+
+This script plots a line graph of the Global Active Power comsumption in kilowatts over the two-day period of 1 Feb 2007 and 2 Feb 2007. 
+
+The script outputs the plot to a PNG file in the sub-directory 'figure' in the current-working directory as: plot2.png
 
 
 *  plot3.R
 
+This script plots the 3 types of Energy Sub-metering for the  two-day period of 1 Feb 2007 and 2 Feb 2007. 
+
+The script outputs the plot to a PNG file in the sub-directory 'figure' in the current-working directory as: plot3.png
+
 *  plot4.R
 
+This script produces 4 plots over the two-day period of 1 Feb 2007 and 2 Feb 2007: 
+           -  plot of Global Active Power comsumption
+           -  plot of Voltage 
+           -  plot of Energy Sub-metering
+           -  plot of Global Re-active Power comsumption
+           
+The script outputs the plot to a PNG file in the sub-directory 'figure' in the current-working directory as: plot4.png
+
 ## Running the scripts
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
-
-* Note that in this dataset missing values are coded as `?`.
 
 ## Making Plots
 
 Our overall goal here is simply to examine how household energy usage
-varies over a 2-day period in February, 2007. Your task is to
-reconstruct the following plots below, all of which were constructed
-using the base plotting system.
+varies over a 2-day period in February, 2007. 
 
 First you will need to fork and clone the following GitHub repository:
 [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
-
 
 For each plot you should
 

@@ -22,6 +22,9 @@
 ########################################################################
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
+if (!file.exists("figure")) {
+	dir.create("figure")
+}
 
 # The data file is stored in a sub-directory named 'data' 
 hhdata <- read.csv("./data/household_power_consumption.txt", header = TRUE, sep= ";", stringsAsFactors=FALSE)

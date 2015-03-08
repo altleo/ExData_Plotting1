@@ -22,6 +22,9 @@
 ########################################################################
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
+if (!file.exists("figure")) {
+	dir.create("figure")
+}
 
 # The data file is stored in a sub-directory named 'data' 
 hhdata <- read.csv("./data/household_power_consumption.txt", header = TRUE, sep= ";", stringsAsFactors=FALSE)
@@ -69,7 +72,7 @@ par(mfrow = c(2,2)  )
 plot(data$dt, as.numeric(data$Global_active_power), 
      type = "l",	
      xlab = "",
-     ylab = "Global Active Power (kilowatts)",  
+     ylab = "Global Active Power",  
      cex.lab=0.8, cex.axis=0.8,
      col = "black")
 
